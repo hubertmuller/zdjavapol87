@@ -1,0 +1,19 @@
+<root>
+    <mieszkaniec imie="JAn" nazwisko="Kowalski">
+        <adres>
+            <ulica>Podmokla 1</ulica>
+            <kodpocztowy>88-888</kodpocztowy>
+            <miejscowosc>Xyz</miejscowosc>
+        </adres>
+    </mieszkaniec>
+    <mieszkaniec imie="Adam" nazwisko="Nowak">
+        <adres>
+            <ulica>Podmokla 1</ulica>
+            <kodpocztowy>88-888</kodpocztowy>
+            <miejscowosc>Xyz</miejscowosc>
+        </adres>
+    </mieszkaniec>
+    <mieszkaniec></mieszkaniec>
+    <mieszkaniec/>
+    <mieszkaniec/>
+</root>
