@@ -47,33 +47,70 @@
 
         <h3>Ceny i charakterystyka szczepionek</h3>
 
-        <table border="1" width="300">
+        <table border="1" width="100%">
             <caption>Ceny i charakterystyka</caption>
             <tr>
                 <th>Nazwa</th>
-                <th>Cena</th>
+                <th>Cena producenta</th>
+                <th>Cena krajowa</th>
                 <th>Kraj producenta</th>
             </tr>
             <tr>
                 <td>Novawax</td>
                 <td>20USD</td>
-                <td rowspan="3">USA</td>
+                <td>22USD</td>
+                <td rowspan="2">USA</td>
             </tr>
             <tr>
                 <td>Corminaty</td>
                 <td>15USD</td>
+                <td>18USD</td>
             </tr>
             <tr>
                 <td>Astra Zeneca</td>
-                <td>12USD</td>
-            </tr>
-            <tr>
-                <td colspan="3">PRzykład</td>
+                <td colspan="2">14USD</td>
+                <td>GB</td>
             </tr>
         </table>
 
         <h2>Formularz</h2>
 
+        <form method="get" action="index.html">
+            <label for="imieid">Imie</label>
+            <input type="text" name="imie" id="imieid" placeholder="wpisz tutaj imie">
+            <label for="nazwiskoid">Nazwisko</label>
+            <input type="text" name="nazwisko" id="nazwiskoid" value="Nowak" placeholder="wpisz tutaj nazwisko">
+            <label for="hasloid">Hasło</label>
+            <input type="password" id="hasloid" name="haslo" value="">
+
+            <label for="kid">Kobieta</label>
+            <input type="radio" value="k" id="kid" name="plec">
+            <label for="kid">Mężczyzna</label>
+            <input type="radio" value="m" id="mid" name="plec">
+
+            <label for="cid">Chcę czekoladę</label>
+            <input type="checkbox" value="c" id="cid" name="x">
+            <label for="coid">Chcę colę</label>
+            <input type="checkbox" value="k" id="coid" name="y">
+
+            <label for="szczepionkaid"></label>
+            <select name="szczepionka" id="szczepionkaid">
+                <option value="1">Jeden</option>
+                <option value="2">dwa</option>
+                <option value="3" disabled>trzy</option>
+                <option value="1" selected="selected">Jeden x</option>
+                <option value="2">dwa</option>
+                <option value="3">trzy</option>
+                <option value="1">Jeden</option>
+                <option value="2">dwa</option>
+                <option value="3">trzy</option>
+            </select>
+            <textarea name="komentarz" rows="10" cols="40">
+                Wpisz teskt
+            </textarea>
+            <input type="submit">
+
+        </form>
 
     </body>
 </html>
