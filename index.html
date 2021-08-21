@@ -76,39 +76,56 @@
         <h2>Formularz</h2>
 
         <form method="get" action="index.html">
-            <label for="imieid">Imie</label>
-            <input type="text" name="imie" id="imieid" placeholder="wpisz tutaj imie">
-            <label for="nazwiskoid">Nazwisko</label>
-            <input type="text" name="nazwisko" id="nazwiskoid" value="Nowak" placeholder="wpisz tutaj nazwisko">
-            <label for="hasloid">Hasło</label>
-            <input type="password" id="hasloid" name="haslo" value="">
+            <div>
+                <label for="imieid">Imie</label>
+                <input type="text" name="imie" id="imieid" placeholder="wpisz tutaj imie">
+            </div>
 
-            <label for="kid">Kobieta</label>
-            <input type="radio" value="k" id="kid" name="plec">
-            <label for="kid">Mężczyzna</label>
-            <input type="radio" value="m" id="mid" name="plec">
+            <div>
+                <label for="nazwiskoid">Nazwisko</label>
+                <input type="text" name="nazwisko" id="nazwiskoid" value="Nowak" placeholder="wpisz tutaj nazwisko">
+            </div>
 
-            <label for="cid">Chcę czekoladę</label>
-            <input type="checkbox" value="c" id="cid" name="x">
-            <label for="coid">Chcę colę</label>
-            <input type="checkbox" value="k" id="coid" name="y">
+            <div>
+                <label for="hasloid">Hasło</label>
+                <input type="password" id="hasloid" name="haslo" value="">
+            </div>
 
-            <label for="szczepionkaid"></label>
-            <select name="szczepionka" id="szczepionkaid">
-                <option value="1">Jeden</option>
-                <option value="2">dwa</option>
-                <option value="3" disabled>trzy</option>
-                <option value="1" selected="selected">Jeden x</option>
-                <option value="2">dwa</option>
-                <option value="3">trzy</option>
-                <option value="1">Jeden</option>
-                <option value="2">dwa</option>
-                <option value="3">trzy</option>
-            </select>
-            <textarea name="komentarz" rows="10" cols="40">
-                Wpisz teskt
-            </textarea>
-            <input type="submit">
+            <fieldset>
+                <legend>Płeć</legend>
+                <label for="kid">Kobieta</label>
+                <input type="radio" value="k" id="kid" name="plec">
+                <label for="kid">Mężczyzna</label>
+                <input type="radio" value="m" id="mid" name="plec">
+            </fieldset>
+
+            <fieldset>
+                <legend>Specjalne bonusy</legend>
+                <label for="cid">Chcę czekoladę</label>
+                <input type="checkbox" value="c" id="cid" name="x">
+                <label for="coid">Chcę colę</label>
+                <input type="checkbox" value="k" id="coid" name="y">
+            </fieldset>
+
+            <div>
+                <label for="szczepionkaid">Wybierz szczepionkę</label>
+                <select name="szczepionka" id="szczepionkaid">
+                    <option value="" disabled readonly selected>Wybierz</option>
+                    <option value="1">Corminaty</option>
+                    <option value="2">Novawax</option>
+                    <option value="3">Astra Zeneca</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="uwagiid">Dodatkowe uwagi</label>
+            </div>
+            <div>
+                <textarea name="komentarz" rows="10" id="uwagiid" cols="40"></textarea>
+            </div>
+
+            <input type="submit" value="Wyślij formularz">
+            <input type="reset" value="Kasuj">
 
         </form>
 
