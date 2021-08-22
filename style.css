@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+body, h2, input, textarea, select {
+    font-size: 18px;
+}
+
 h2 {
     color: brown;
-    moja-wlasnosc: brown;
 }
+
+table {
+    border: 1px solid #aaaaaa;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: bisque;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+tr {
+    background-color: beige;
+}
+
+
 
 /*
 
