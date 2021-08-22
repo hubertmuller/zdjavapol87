@@ -1,3 +1,96 @@
 h2 {
     color: brown;
+    moja-wlasnosc: brown;
 }
+
+/*
+
+Wazenie styli (klasyfikacja "medalowa" - id-class-tag)
+
+input.styl2 {
+    background-color: blue;
+    border: 1px;
+}
+
+input.styl1 {
+    background-color: aqua;
+}
+
+.styl1 {
+    background-color: blue;
+}
+
+#nazwiskoid {
+    background-color: red;
+}
+
+input#nazwiskoid {
+    background-color: yellow;
+}
+
+input {
+    background-color: green;
+}
+*/
+
+/*
+
+Przyklady selektorow i operatorow
+
+input[name="nazwisko"] {
+    background-color: aqua;
+}
+
+body form > div > input[name="nazwisko"] {
+    border: 10px solid #ff0000;
+}
+
+div + div {
+    border: 10px solid #00ff00;
+}
+
+div + fieldset, fieldset + fieldset, fieldset + div{
+    border: 10px solid #0000ff;
+}
+
+form input {
+    border: 10px solid #ff0000;
+}
+
+[name="nazwisko"] {
+    background-color: aqua;
+}
+
+[id="nazwiskoid"] {
+    background-color: aqua;
+}
+
+input[id="nazwiskoid"] {
+    background-color: aqua;
+}
+
+input#nazwiskoid {
+    background-color: aqua;
+}
+
+input.styl1 {
+    background-color: aqua;
+}
+
+input.styl2 {
+    background-color: blue;
+}
+
+.styl1 {
+    background-color: aqua;
+}
+
+#nazwiskoid {
+    background-color: aqua;
+}
+
+.styl1 {
+    background-color: aqua;
+}
+*/
+
