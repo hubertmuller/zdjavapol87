@@ -2,9 +2,59 @@
 
 * {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body, h2, input, textarea, select {
+fieldset, div {
+    margin-bottom: 20px;
+}
+
+fieldset label {
+    font-weight: 400;
+}
+
+label, legend {
+    padding-bottom: 5px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+legend {
+    padding-left: 0;
+}
+
+input[type="text"], [type="password"],
+input[type="submit"], input[type="reset"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid brown;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin-bottom: 20px;
+}
+
+[type="submit"]:hover, [type="reset"]:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+[type="checkbox"], [type="radio"]
+{
+    width: 18px;
+    height: 18px;
+}
+
+input[type="text"]:focus, [type="password"]:focus, textarea:focus {
+    background-color: bisque;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+body, input, textarea, select {
     font-size: 18px;
 }
 
@@ -57,6 +107,14 @@ a:active {
 
 a:visited {
     color: black;
+}
+
+.doduwagi {
+    /*to jest dla demonstracji ze stylowanie
+    przy pomocy class jest szeoko stosowane
+    i sa tego korzysci np w postaci mozliwosci
+    nanoszenia klas bezposrednio na rozne nazwy elementow*/
+    background-color: antiquewhite;
 }
 
 /*
