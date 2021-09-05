@@ -1,3 +1,5 @@
+//ten program nalezy przetranspilowac przy pomocy:
+// tsc test.ts - pojawi sie wtedy plik test.js
 console.log('czesc tu typecript');
 var Test = /** @class */ (function () {
     function Test() {
